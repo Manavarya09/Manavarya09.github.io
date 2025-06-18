@@ -3425,8 +3425,10 @@ img.u-pull-left {
 }
 
 .about-info__text {
-    padding     : var(--vspace-3_5) 10vw var(--vspace-2) 0;
-    margin-left : -4rem;
+    padding: var(--vspace-3_5) 10vw var(--vspace-2) 0;
+    margin-left: 0;
+    position: relative;
+    z-index: 1;
 }
 
 .about-info__text .text-pretitle {
@@ -4463,5 +4465,16 @@ img.u-pull-left {
     box-shadow: 0 16px 48px 0 rgba(0,0,0,0.28), 0 4px 16px 0 rgba(0,0,0,0.18);
     transform: translateY(-8px) scale(1.06) rotate(-2deg);
     z-index: 2;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .about-info__text {
+      padding: var(--vspace-2) 0 var(--vspace-1_5) 0;
+      margin-left: 0;
+      margin-top: 2rem;
+    }
+    .about-info__pic-block {
+      margin-bottom: 2rem;
+    }
   }
   
